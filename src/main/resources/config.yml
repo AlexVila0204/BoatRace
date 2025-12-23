@@ -1,0 +1,39 @@
+# BossRace Plugin Configuration
+
+# Race settings
+race:
+  max-players: 6
+  min-players: 2
+  countdown-seconds: 5
+  default-laps: 3
+
+# Rewards - Commands executed when players finish
+# Use {player} as placeholder for player name
+# Leave empty or remove to disable reward for that position
+rewards:
+  1st-place:
+    - "eco give {player} 1000"
+    - "give {player} diamond 5"
+  2nd-place:
+    - "eco give {player} 500"
+  3rd-place:
+    - "eco give {player} 250"
+
+# Locations (set using commands - DO NOT EDIT MANUALLY)
+locations:
+  finishLine:
+    pos1: null
+    pos2: null
+  spawns: {}
+  checkpoints: {}
+
+# Messages
+messages:
+  prefix: "&6&l[BossRace] &r"
+  race-created: "&aRace created! Players can join with /race join"
+  player-joined: "&a{player} joined the race!"
+  player-left: "&c{player} left the race."
+  race-started: "&aRace has started!"
+  lap-complete: "&6Lap {lap}/{total} complete!"
+  player-finished: "&6{player} finished #{position}!"
+  no-race: "&cNo active race!"

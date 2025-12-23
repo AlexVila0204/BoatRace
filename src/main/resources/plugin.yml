@@ -1,0 +1,22 @@
+name: BossRace
+version: '1.0.0'
+main: solrynmc.bossRace.BossRace
+api-version: '1.21'
+authors: [ AlexVila04 ]
+description:  Boat racing plugin
+
+commands:
+  race:
+    description: Main race command
+    usage: /race <join|leave|start|status>
+    aliases: [boatrace, br]
+
+permissions:
+  bossrace.admin:
+    description: Allows starting and managing races
+    default: op
+  bossrace.join:
+    description: Allows joining races
+    default: true
+
+
